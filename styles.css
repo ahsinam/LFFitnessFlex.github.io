@@ -9,7 +9,8 @@
 
 :root {
     --primary-color: #005a00;
-    --seconday-color: #7ddbdb;
+    /* --seconday-color: #5f9ea0; */
+    --seconday-color: #299129;
     --border-color: #ddd;
     --text-Color: green
 }
@@ -73,15 +74,10 @@ nav {
     margin: 16px;
 }
 
-.circle {
-    border-radius: 50%;
-    box-shadow: 2px 2px 0.5px 0 var(--seconday-color);
-}
-
 .content p {
     max-width: 600px;
     text-align: justify;
-    line-height: 28px;
+    line-height: 1.5;
 }
 
 .cRadius {
@@ -93,14 +89,16 @@ nav {
 
 /* Table  CSS starts here  */
 .wideContainer {
-    max-width: 1000px;
-    margin: 0 150px;
+    max-width: 1400px;
+    margin: 50px auto;
 }
 
 #fitnessData {
-    width: 30vw;
+    width: 35vw;
     height: 25vh;
     border-collapse: collapse;
+    margin-right: 52px;
+
 }
 
 #fitnessData td,
@@ -113,27 +111,47 @@ nav {
 #fitnessData th {
     border: none;
     background-color: var(--seconday-color);
+    color: white;
+}
+
+#fitnessData tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
 /* Table CSS Ends here  */
 
 /* Form  CSS starts here  */
 form {
-    font-size: 16px;
     min-width: 400px;
-    background-color: var(--seconday-color);
+    /* background-color: pink; */
+    border: 1px solid var(--primary-color);
+    line-height: 25px;
+    padding: 20px;
+    border-radius: 50px;
+}
 
-    border: 1px solid black;
+form input {
+    min-width: 250px;
+    line-height: 25px;
+    padding: 16px;
+    border-radius: 50px;
+    border: 1px solid var(--primary-color);
+
+}
+
+form button {
+    min-width: 150px;
+    margin: 0 auto;
+    margin-top: 14px;
+    padding: 20px;
+    border-radius: 50px;
     color: white;
+    border: 1px solid var(--border-color);
+    background-color: var(--seconday-color);
 }
 
 .formData {
-    margin: 10px;
-}
-
-.formData input {
-    height: 24px;
-    padding: 12px;
+    padding: 16px 0;
 }
 
 /* Form CSS Ends here  */
