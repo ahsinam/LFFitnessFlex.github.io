@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary-color: #005a00;
+    --seconday-color: #7ddbdb;
+    --border-color: #ddd;
+    --text-Color: green
+}
+
+.flexBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.columnFlexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    color: var(--text-Color);
+    margin: 24px;
+}
+
+/* header CSS starts here  */
+header {
+    width: 100vw;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+nav {
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menuItem {
+    max-width: 600px;
+}
+
+.menuItem span a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+/* header CSS ends here  */
+
+/* Description section CSS starts here  */
+
+.columnFlexbox h2 {
+    font-size: 36px;
+    text-align: center;
+    color: var(--text-Color);
+    margin: 16px;
+}
+
+.circle {
+    border-radius: 50%;
+    box-shadow: 2px 2px 0.5px 0 var(--seconday-color);
+}
+
+.content p {
+    max-width: 600px;
+    text-align: justify;
+    line-height: 28px;
+}
+
+.cRadius {
+    border-radius: 20px;
+    box-shadow: 2px 2px 0.5px 0 var(--seconday-color);
+}
+
+/* Description section CSS ends here  */
+
+/* Table  CSS starts here  */
+.wideContainer {
+    max-width: 1000px;
+    margin: 0 150px;
+}
+
+#fitnessData {
+    width: 30vw;
+    height: 25vh;
+    border-collapse: collapse;
+}
+
+#fitnessData td,
+#fitnessData th {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    text-align: center;
+}
+
+#fitnessData th {
+    border: none;
+    background-color: var(--seconday-color);
+}
+
+/* Table CSS Ends here  */
+
+/* Form  CSS starts here  */
+form {
+    font-size: 16px;
+    min-width: 400px;
+    background-color: var(--seconday-color);
+
+    border: 1px solid black;
+    color: white;
+}
+
+.formData {
+    margin: 10px;
+}
+
+.formData input {
+    height: 24px;
+    padding: 12px;
+}
+
+/* Form CSS Ends here  */
+
+footer {
+    padding: 16px;
+    background-color: var(--seconday-color);
+    text-align: center;
+}
